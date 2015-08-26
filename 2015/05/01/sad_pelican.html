@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+      <meta charset="utf-8" />
+    <title>pyCapybara &middot; 淋しいペリカンちゃん</title>
+    <link rel="shortcut icon" href="http://pycapybara.github.io/favicon.ico" />
+    <link rel="stylesheet" href="http://pycapybara.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="http://pycapybara.github.io/theme/css/pygments.css" type="text/css" />
+
+
+    <meta name="tags" contents="pelican" />
+    <meta name="tags" contents="python" />
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="http://pycapybara.github.io">Home</a></li>
+            <li><a href="http://pycapybara.github.io/pages/about-me.html">about me</a></li>
+            <li><a href="http://pycapybara.github.io/archives.html">Archives</a></li>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://pycapybara.github.io">pyCapybara</a></h1>
+            <h2>love little white capybara</h2>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content">
+            <h4 class="date"> 5月 01, 2015</h4>
+            <article class="post">
+<h2 class="title">
+                    <a href="http://pycapybara.github.io/2015/05/01/sad_pelican.html" rel="bookmark" title="Permanent Link to &quot;淋しいペリカンちゃん&quot;">淋しいペリカンちゃん</a>
+                </h2>
+
+                <a class="reference external image-reference" href="/images/2015/2015-05-01.jpg"><img alt="/images/2015/2015-05-01.jpg" src="/images/2015/2015-05-01.jpg" style="width: 320px;" /></a>
+<div class="section" id="id2">
+<h2>お世話になってるリンク集を作ろう</h2>
+<p><em>pelicanconf.py</em> には、 <em>LINKS</em> という項目があります。</p>
+<p>テーマによっては、この項目を使ってくれたりします。</p>
+<p>ですが残念ながら、今適用しているテーマでは、どうやらこの LINKS は、使われていないみたいです。</p>
+<p>仕方ないので、ページの末尾にリンクを作ることにしました。</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span class="x">&lt;p&gt;</span>
+<span class="x">  </span><span class="cp">{%</span> <span class="k">for</span> <span class="nv">name</span><span class="o">,</span> <span class="nv">link</span> <span class="k">in</span> <span class="nv">LINKS</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">   | &lt;a href=&quot;</span><span class="cp">{{</span> <span class="nv">link</span> <span class="cp">}}</span><span class="x">&quot;&gt;</span><span class="cp">{{</span> <span class="nv">name</span> <span class="cp">}}</span><span class="x">&lt;/a&gt;</span>
+<span class="x">  </span><span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">   |</span>
+<span class="x">&lt;/p&gt;</span>
+</pre></div>
+</td></tr></table></div>
+
+
+                <div class="clear"></div>
+                <div class="info">
+                    <a href="http://pycapybara.github.io/2015/05/01/sad_pelican.html">posted at 17:51</a>&nbsp;&middot;&nbsp;<a href="http://pycapybara.github.io/category/try.html" rel="tag">try</a>&nbsp;&middot;&nbsp;<a href="http://pycapybara.github.io/tag/pelican.html" class="tags">pelican</a>&nbsp;<a href="http://pycapybara.github.io/tag/python.html" class="tags">python</a>
+                </div>
+
+            </article>
+            <div class="clear"></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'pycapybara';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+            <div class="clear"></div>
+            <footer>
+              <p>
+			      | <a href="http://note.crohaco.net/">くろのて</a>
+			      | <a href="http://masayas.github.io/">Masaya</a>
+			      | <a href="http://jptomo.github.io/">適当に だらだらと 楽しく</a>
+                 |
+              </p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

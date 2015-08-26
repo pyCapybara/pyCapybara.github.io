@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+      <meta charset="utf-8" />
+    <title>pyCapybara &middot; はじめまして、ペリカンちゃん</title>
+    <link rel="shortcut icon" href="http://pycapybara.github.io/favicon.ico" />
+    <link rel="stylesheet" href="http://pycapybara.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="http://pycapybara.github.io/theme/css/pygments.css" type="text/css" />
+
+
+    <meta name="tags" contents="pelican" />
+    <meta name="tags" contents="python" />
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="http://pycapybara.github.io">Home</a></li>
+            <li><a href="http://pycapybara.github.io/pages/about-me.html">about me</a></li>
+            <li><a href="http://pycapybara.github.io/archives.html">Archives</a></li>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://pycapybara.github.io">pyCapybara</a></h1>
+            <h2>love little white capybara</h2>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content">
+            <h4 class="date"> 3月 29, 2015</h4>
+            <article class="post">
+<h2 class="title">
+                    <a href="http://pycapybara.github.io/2015/03/29/first_pelican.html" rel="bookmark" title="Permanent Link to &quot;はじめまして、ペリカンちゃん&quot;">はじめまして、ペリカンちゃん</a>
+                </h2>
+
+                <a class="reference external image-reference" href="/images/2015/2015-03-29.jpg"><img alt="/images/2015/2015-03-29.jpg" src="/images/2015/2015-03-29.jpg" style="width: 320px;" /></a>
+<div class="section" id="id2">
+<h2>ペリカンちゃんは、どんな子だろ</h2>
+<div class="section" id="id3">
+<h3>どうしてお友達になろうと思ったの？</h3>
+<ul class="simple">
+<li>Python 製なので、 <em>pip install</em> で入るから。</li>
+<li>Python 製だから、 <em>virtualenv</em> で環境構築できるから。</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>どんな子なの？</h3>
+<ul class="simple">
+<li>導入してみただけだと、以前使ってた <em>Tinkerer</em> との違いは、あまり感じません。</li>
+<li>サイトジェネレータ <a class="reference external" href="http://docs.getpelican.com/en/3.5.0/">Pelican</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>最初のご挨拶</h2>
+<div class="section" id="install">
+<h3>install</h3>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre>. ./env/bin/activate
+pip install pelican
+pelican-quickstart
+make html
+<span class="nb">cd </span>output <span class="o">&amp;&amp;</span> python -m pelican.server 8888
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="github-pages">
+<h3>github-pages</h3>
+<ul class="simple">
+<li>今回は <em>github-pages</em> を使ってみます。</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre>pip install ghp-import
+make html
+git push
+pelican -s pelicanconf.py
+</pre></div>
+</td></tr></table><ul class="simple">
+<li>これだけで、簡単に公開出来ました。</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>もっと仲良くなるには</h2>
+<ul class="simple">
+<li>ここまでだと、 <strong>公開できたよね</strong> ってことで終わってしまいます。</li>
+<li>導入が簡単とはいえ、導入後に設定することは、Tinkerer 同様多いです。</li>
+<li>ディレクトリ構成は、公開する前にきちんと考えておかないといけないと、思いました。</li>
+<li>ついつい <em>org-mode</em> のつもりで書いてしまうから、 <em>rst</em> をもっとスラスラ書けるようにならないといけないです。</li>
+</ul>
+</div>
+
+
+                <div class="clear"></div>
+                <div class="info">
+                    <a href="http://pycapybara.github.io/2015/03/29/first_pelican.html">posted at 21:45</a>&nbsp;&middot;&nbsp;<a href="http://pycapybara.github.io/category/try.html" rel="tag">try</a>&nbsp;&middot;&nbsp;<a href="http://pycapybara.github.io/tag/pelican.html" class="tags">pelican</a>&nbsp;<a href="http://pycapybara.github.io/tag/python.html" class="tags">python</a>
+                </div>
+
+            </article>
+            <div class="clear"></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'pycapybara';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+            <div class="clear"></div>
+            <footer>
+              <p>
+			      | <a href="http://note.crohaco.net/">くろのて</a>
+			      | <a href="http://masayas.github.io/">Masaya</a>
+			      | <a href="http://jptomo.github.io/">適当に だらだらと 楽しく</a>
+                 |
+              </p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

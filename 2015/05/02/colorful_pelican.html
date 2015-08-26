@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+      <meta charset="utf-8" />
+    <title>pyCapybara &middot; ペリカンちゃん、はじめてのお化粧</title>
+    <link rel="shortcut icon" href="http://pycapybara.github.io/favicon.ico" />
+    <link rel="stylesheet" href="http://pycapybara.github.io/theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="http://pycapybara.github.io/theme/css/pygments.css" type="text/css" />
+
+
+    <meta name="tags" contents="pelican" />
+    <meta name="tags" contents="python" />
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a href="http://pycapybara.github.io">Home</a></li>
+            <li><a href="http://pycapybara.github.io/pages/about-me.html">about me</a></li>
+            <li><a href="http://pycapybara.github.io/archives.html">Archives</a></li>
+        </nav>
+        <div class="header_box">
+            <h1><a href="http://pycapybara.github.io">pyCapybara</a></h1>
+            <h2>love little white capybara</h2>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="content">
+            <h4 class="date"> 5月 02, 2015</h4>
+            <article class="post">
+<h2 class="title">
+                    <a href="http://pycapybara.github.io/2015/05/02/colorful_pelican.html" rel="bookmark" title="Permanent Link to &quot;ペリカンちゃん、はじめてのお化粧&quot;">ペリカンちゃん、はじめてのお化粧</a>
+                </h2>
+
+                <a class="reference external image-reference" href="/images/2015/2015-05-02.jpg"><img alt="/images/2015/2015-05-02.jpg" src="/images/2015/2015-05-02.jpg" style="width: 320px;" /></a>
+<p>絶滅危惧種少女を連想してリンクをクリックしてくださった皆様、ありがとうございます。</p>
+<p>残念ながら、全く無関係のお話です。</p>
+<p>ここは、かわいいこねずみちゃんを紹介する為のページだからです。</p>
+<div class="section" id="restructure-code-block">
+<h2>restructure の code-block についてのメモ</h2>
+<div class="section" id="id2">
+<h3>テンプレートコードの場合</h3>
+<p>昨日、テンプレートコードを貼ってみたところ、綺麗にハイライトされませんでした。</p>
+<p><em>python</em> を指定すべきではないと思って、 <em>html</em> や <em>tamplate</em> 、それならばと <em>jinja2</em> を指定してみたのですが、ダメダメでした。</p>
+<p><a class="reference external" href="http://equal-001.hatenablog.com/">tomoさん</a>
+が、 <em>django</em> が使えるとアドバイスしてくれました。</p>
+<p>ピンときて、 <em>jinja</em> を指定すると、こちらもうまくいきました。</p>
+<p>どうやら、 <em>django == jinja</em> ということでした。</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span class="x"> .. code-block:: django</span>
+<span class="x">    :linenos:</span>
+
+<span class="x">  &lt;p&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">for</span> <span class="nv">name</span><span class="o">,</span> <span class="nv">link</span> <span class="k">in</span> <span class="nv">LINKS</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">     | &lt;a href=&quot;</span><span class="cp">{{</span> <span class="nv">link</span> <span class="cp">}}</span><span class="x">&quot;&gt;</span><span class="cp">{{</span> <span class="nv">name</span> <span class="cp">}}</span><span class="x">&lt;/a&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span><span class="x"></span>
+<span class="x">     |</span>
+<span class="x">  &lt;/p&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<div class="section" id="id3">
+<h3>勝手な思い込み</h3>
+<p><em>jinja</em> を勝手に <em>jinja2</em> と思い込んでたように、
+<em>sh</em> を <em>shell</em> と思い込んだりしていました。</p>
+<p>git コマンドのハイライトとかは、ないのかなあ。</p>
+</div>
+</div>
+
+
+                <div class="clear"></div>
+                <div class="info">
+                    <a href="http://pycapybara.github.io/2015/05/02/colorful_pelican.html">posted at 18:52</a>&nbsp;&middot;&nbsp;<a href="http://pycapybara.github.io/category/try.html" rel="tag">try</a>&nbsp;&middot;&nbsp;<a href="http://pycapybara.github.io/tag/pelican.html" class="tags">pelican</a>&nbsp;<a href="http://pycapybara.github.io/tag/python.html" class="tags">python</a>
+                </div>
+
+            </article>
+            <div class="clear"></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'pycapybara';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+            <div class="clear"></div>
+            <footer>
+              <p>
+			      | <a href="http://note.crohaco.net/">くろのて</a>
+			      | <a href="http://masayas.github.io/">Masaya</a>
+			      | <a href="http://jptomo.github.io/">適当に だらだらと 楽しく</a>
+                 |
+              </p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
